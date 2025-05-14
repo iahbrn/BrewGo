@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrewGO - Coffee Delivery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">BrewGO ☕</div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+
+        <div id="nav-links" class="nav-links">
+            <a href="#">Home</a>
+            <a href="#how-it-works">How it works</a>
+            <a href="#menu-bar">Menu</a>
+            <a href="#contact-us">Contact Us</a>
+        </div>
+
+        <div class="nav-right">
+            <button class="sign-in-btn">Sign In</button>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Your Favorite <span class="highlight">Coffee</span>, <br>Delivered Fast!</h1>
+            <p>Freshly brewed from your favorite local shops. <br>Enjoy convenience in every sip!</p>
+            <div class="buttons">
+              <button class="menu-btn" onclick="window.location.href='#menu-bar'">See Menu</button>
+              <button class="order-btn" onclick="window.location.href='#how-it-works'">Order Now</button>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="coffee-cup.png" alt="Coffee Cup">
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <p class="section-title">How it works</p>
+        <h2 class="how-title">What We Serve</h2>
+        <p class="description">
+          At BrewGO, quality coffee is our priority. We ensure every cup is brewed fresh and delivered with care, straight to your door.
+        </p>
+      
+        <div class="features">
+          <div class="feature">
+            <img src="order.jpeg" alt="Easy to Order" />
+            <h3>Easy To Order</h3>
+            <p>Quickly order your favorite <br>brews through our app.</p>
+          </div>
+          <div class="feature">
+            <img src="delivery.jpg" alt="Fastest Delivery" />
+            <h3>Fastest Delivery</h3>
+            <p>Get your coffee delivered <br>on time, every time.</p>
+          </div>
+          <div class="feature">
+            <img src="quality.jpg" alt="Best Quality" />
+            <h3>Best Quality</h3>
+            <p>Enjoy premium coffee <br>from trusted local cafes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu-bar" class="menu-section">
+        <p class="section-menu">Our menu</p>
+        <h2 class="menu-title">Find Your Favorite</h2>
+        <p class="menu-description">
+          Explore our delicious coffee selections and find <br>your perfect cup!
+        </p>
+      
+        <div class="menu-items">
+            <div class="menu-card">
+              <div class="card-image">
+                <img src="frappe.png" alt="Frappe" />
+              </div>
+              <div class="card-text">
+                <p>Frappe</p>
+              </div>
+            </div>
+          
+            <div class="menu-card">
+              <div class="card-image">
+                <img src="iced-coffee.png" alt="Iced Coffee" />
+              </div>
+              <div class="card-text">
+                <p>Iced Coffee</p>
+              </div>
+            </div>
+          
+            <div class="menu-card">
+              <div class="card-image">
+                <img src="hot-coffee.png" alt="Hot Coffee" />
+              </div>
+              <div class="card-text">
+                <p>Hot Coffee</p>
+              </div>
+            </div>
+          
+            <div class="menu-card">
+              <div class="card-image">
+                <img src="milktea.png" alt="Milktea" />
+              </div>
+              <div class="card-text">
+                <p>Milktea</p>
+              </div>
+            </div>
+          </div>       
+          
+          <section id="contact-us" class="contact-section">
+            <div class="contact-overlay">
+              <h3 class="contact-subtitle">Contact Us</h3>
+              <h2 class="contact-title">Let’s Chat Over Coffee</h2>
+              <p class="contact-description">
+                Need help with your order or want to know <br>more? Reach out to us!
+              </p>
+          
+              <form class="contact-form" id="contact-form">
+                <div class="form-group">
+                  <input type="text" id="name" placeholder="Name" required />
+                  <input type="email" id="email" placeholder="Email" required />
+                  <textarea id="message" placeholder="Message" required></textarea>
+                </div>
+                <button class="submit-btn" type="submit">Submit</button>
+              </form>
+
+            </div>
+          </section>
+
+          <footer>
+            <div class="footer-container">
+              <div class="footer-section brand-section">
+                <h3>BrewGO ☕</h3>
+                <p>34 Everlasting Street, Malitam<br>Batangas City, Philippines</p>
+                <div class="social-icons">
+                  <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+              </div>
+          
+              <div class="footer-section link-section">
+                <h3>Company</h3>
+                <div class="link-row">
+                  <a href="#">About Us</a>
+                  <a href="#">Career</a>
+                  <a href="#">How It Work</a>
+                </div>
+              </div>
+          
+              <div class="footer-section link-section">
+                <h3>Policy</h3>
+                <div class="link-row">
+                  <a href="#">FAQ</a>
+                  <a href="#">Privacy</a>
+                  <a href="#">Shipping</a>
+                </div>
+              </div>
+          
+              <div class="footer-section">
+                <h3>Get In Touch</h3>
+                <p>09932349380</p>
+                <p>brewgo@gmail.com</p>
+              </div>
+            </div>
+          
+            <div class="footer-divider"></div>
+          
+            <div class="footer-bottom">
+              © 2025 BrewGO. ALL RIGHT RESERVED.
+            </div>
+          </footer>
+          
+    <script src="script.js"></script>
+</body>
+</html>
